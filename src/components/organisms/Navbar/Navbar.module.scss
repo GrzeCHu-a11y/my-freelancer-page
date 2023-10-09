@@ -1,5 +1,12 @@
+@use "/src/Variables.scss" as v;
+
 .nav {
   width: 100%;
   height: 10vh;
-  background-color: #646cff;
+  padding: 15px 0;
+}
+
+.navlink {
+  color: black;
+  text-decoration: none;
 }
