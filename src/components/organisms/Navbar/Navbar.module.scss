@@ -2,11 +2,66 @@
 
 .nav {
   width: 100%;
-  height: 10vh;
-  padding: 15px 0;
+  height: auto;
+  margin: 20px 0 20px 0;
+  // display: flex;
+  // flex-direction: row;
+  position: relative;
+}
+
+.header {
+  color: v.$second-collor;
+  font-size: 24px;
+}
+
+.hamburger {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 34px;
+  height: 34px;
+}
+
+.itemsContainerClose {
+  display: none;
+}
+
+.itemsContainerOpen {
+  position: absolute;
+  margin-top: 20px;
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(228, 226, 226);
 }
 
 .navlink {
   color: black;
   text-decoration: none;
+}
+
+//Desktop
+@media (min-width: 500px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+
+  }
+  .hamburger {
+    display: none;
+  }
+
+  .itemsContainerClose {
+    display: block;
+    // margin-top: 20px;
+    width: 80%;
+    text-align: center;
+    // display: flex;
+    // flex-direction: column;
+    font-size: 24px;
+    background-color: rgb(228, 226, 226);
+  }
 }
