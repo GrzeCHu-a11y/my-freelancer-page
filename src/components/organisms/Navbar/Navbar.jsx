@@ -1,29 +1,50 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import style from "./Navbar.module.scss";
 
 const Navbar = () => {
   const [toogleMenu, setTooglemenu] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const toogleNav = () => {
     setTooglemenu(!toogleMenu);
   };
 
+  useEffect(() => {
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", changeWidth);
+
+    return () => {
+      window.removeEventListener("resize", changeWidth);
+    };
+  }, []);
+
   return (
     <nav className={style.nav}>
       <header className={style.header}>
-        <h3>G.G Dev</h3>
+        <h2 className={style.logo}>G.G Dev</h2>
       </header>
-      <div className={style.hamCon}></div>
-      <img className={style.hamburger} onClick={toogleNav} src="src/assets/hamburger.png" alt="" />
-      <div className={`${toogleMenu ? style.itemsContainerOpen : style.itemsContainerClose}`}>
-        <NavLink className={style.navlink} to="/">
-          Home
-        </NavLink>
-        <NavLink className={style.navlink} to="/about">
-          About
-        </NavLink>
-      </div>
+      {(toogleMenu || screenWidth > 500) && (
+        <ul className={style.list}>
+          <NavLink className={style.item} to="/">
+            Strona Główna
+          </NavLink>
+          <NavLink className={style.item} to="/about">
+            Usługi
+          </NavLink>
+          <NavLink className={style.item} to="/about">
+            Kontakt
+          </NavLink>
+        </ul>
+      )}
+
+      {/* <button onClick={toogleNav} className={style.btn}>
+        btn
+      </button> */}
+      <img src="src/assets/hamburger.png" alt="" className={style.btn} onClick={toogleNav} />
     </nav>
   );
 };

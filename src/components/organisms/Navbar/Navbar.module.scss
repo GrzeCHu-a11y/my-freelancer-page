@@ -1,67 +1,111 @@
 @use "/src/Variables.scss" as v;
 
 .nav {
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: auto;
-  margin: 20px 0 20px 0;
-  // display: flex;
-  // flex-direction: row;
+  height: 50px;
+  background-color: v.$primary-color;
+}
+
+.list {
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
   position: relative;
+
+
+  .item {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    
+  }
 }
 
-.header {
+.logo {
   color: v.$second-collor;
-  font-size: 24px;
 }
 
-.hamburger {
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 34px;
-  height: 34px;
-}
-
-.itemsContainerClose {
+.btn {
   display: none;
 }
-
-.itemsContainerOpen {
-  position: absolute;
-  margin-top: 20px;
-  width: 100%;
-  height: 50vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(228, 226, 226);
-}
-
-.navlink {
-  color: black;
-  text-decoration: none;
-}
-
-//Desktop
+//des
 @media (min-width: 500px) {
+
   .nav {
     display: flex;
     flex-direction: row;
-
-  }
-  .hamburger {
-    display: none;
   }
 
-  .itemsContainerClose {
-    display: block;
-    // margin-top: 20px;
-    width: 80%;
-    text-align: center;
-    // display: flex;
-    // flex-direction: column;
-    font-size: 24px;
-    background-color: rgb(228, 226, 226);
+  .list {
+    width: 40%;
+    padding-top: 20px; ///t
+    .item {
+      align-self: center;
+      
+    }
+  }
+
+  .header {
+    width: 60%;
+    height: 50px;
+    margin-left: 45px;
+    padding-top: 20px; ///t
+    display: flex;
+
+    .logo {
+      align-self: center;
+      font-size: 36px;
+    }
   }
 }
+
+//Mobile
+@media screen and (max-width: 500px) {
+
+  .header {
+    height: 50px;
+    margin-left: 25px;
+    width: 40%;
+    display: flex;
+
+    .logo {
+      align-self: center;
+      font-size: 24px;
+    }
+  }
+  
+
+  .list {
+    flex-direction: column;
+    height: auto;
+    background-color: aquamarine;
+  }
+  .item:nth-child(1) {
+    border-top: 1px solid black;
+    margin-top: 50px;
+  }
+  .item {
+    width: 100%;
+    border-top: 1px solid black;
+    text-align: center;
+    margin-right: 0px;
+    padding: 20px 0;
+  }
+  .btn {
+    display: block;
+    position: absolute;
+    right: 0px;
+    color: black;
+    // padding: 5px;
+    top: 2px;
+    width: 44px;
+    height: 44px;
+    margin-right: 25px;
+  }
+}
+
