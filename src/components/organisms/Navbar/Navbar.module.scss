@@ -2,10 +2,13 @@
 
 .nav {
   position: fixed;
+  padding-top: 20px;
   top: 0;
   width: 100%;
-  height: 50px;
+  height: auto;
   background-color: v.$primary-color;
+  border: solid 1px #ededed;
+  box-shadow: 0px 0px  5px 0px rgba(199, 197, 197, 0.6);
 }
 
 .list {
@@ -21,45 +24,46 @@
     margin-right: 20px;
     font-size: 20px;
     cursor: pointer;
-    color: black;
-    
+    color: #2B2D42;
   }
 }
 
 .logo {
   color: v.$second-collor;
+  font-weight: 600;
 }
 
 .btn {
   display: none;
 }
-//des
+//desktop
 @media (min-width: 500px) {
 
   .nav {
     display: flex;
     flex-direction: row;
+    line-height: 50px;
   }
 
   .list {
     width: 40%;
-    padding-top: 20px; ///t
+    margin-right: 45px;
+    justify-content: flex-end;
     .item {
-      align-self: center;
-      
+      font-size: v.$fs-d-small;
+      font-weight: 500;
     }
   }
 
   .header {
     width: 60%;
-    height: 50px;
+    // height: 50px;
     margin-left: 45px;
-    padding-top: 20px; ///t
     display: flex;
 
     .logo {
       align-self: center;
-      font-size: 36px;
+      font-size: v.$fs-d-medium;
     }
   }
 }
@@ -101,8 +105,7 @@
     position: absolute;
     right: 0px;
     color: black;
-    // padding: 5px;
-    top: 2px;
+    top: 20px;
     width: 44px;
     height: 44px;
     margin-right: 25px;
