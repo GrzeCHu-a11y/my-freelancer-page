@@ -29,13 +29,13 @@ const Navbar = () => {
       </header>
       {(toogleMenu || screenWidth > 500) && (
         <ul className={style.list}>
-          <NavLink className={style.item} to="/">
+          <NavLink className={style.item} to="/" onClick={toogleNav}>
             Strona Główna
           </NavLink>
-          <NavLink className={style.item} to="/about">
+          <NavLink className={style.item} to="/about" onClick={toogleNav}>
             Usługi
           </NavLink>
-          <NavLink className={style.item} to="/about">
+          <NavLink className={style.item} to="/about" onClick={toogleNav}>
             Kontakt
           </NavLink>
         </ul>

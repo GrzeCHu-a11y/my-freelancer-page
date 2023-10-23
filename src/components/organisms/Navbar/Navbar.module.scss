@@ -1,14 +1,20 @@
 @use "/src/Variables.scss" as v;
 
 .nav {
-  position: fixed;
+  
   padding-top: 20px;
   top: 0;
   width: 100%;
   height: auto;
   background-color: v.$primary-color;
-  border: solid 1px #ededed;
-  box-shadow: 0px 0px  5px 0px rgba(199, 197, 197, 0.6);
+
+}
+
+//Mobile
+@media screen and (max-width: 500px) {
+  .nav {
+    position: fixed;
+  }
 }
 
 .list {

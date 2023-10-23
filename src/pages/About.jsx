@@ -1,15 +1,14 @@
 const About = () => {
   return (
-    <div>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-    </div>
+    <section>
+      <h2>ABBB</h2>
+      <h2>ABBB</h2>
+      <h2>ABBB</h2>
+      <h2>ABBB</h2>
+      <h2>ABBB</h2>
+      <h2>ABBB</h2>
+      <h2>ABBB</h2>
+    </section>
   );
 };
 

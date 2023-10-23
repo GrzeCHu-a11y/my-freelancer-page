@@ -1,5 +1,58 @@
+@use "/src/Variables.scss" as v;
 .home {
     width: 100%;
-    height: 700vh;
-    padding-top: 100px;
 }
+
+.header {
+    .h1 {
+        font-size: v.$fs-m-big;
+    }
+}
+
+.p {
+    margin-top: 15px;
+    font-size: v.$fs-m-small;
+    font-weight: 300;
+    color: #2B2D42;
+}
+
+.bigPhoto {
+    margin-top: 30px;
+    width: 100%;
+    height: 230px;
+}
+
+.buttonsContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.specialButton {
+    font-size: v.$fs-m-small;
+    background-color: white;
+    padding: 5px;
+    border: 2px solid #EF6268;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.button {
+    font-size: v.$fs-m-small;
+    background-color: v.$second-collor;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+// .header {
+//     width: 70%;
+
+//     .h1 {
+//         font-size: v.$fs-d-very-big;
+//         font-weight: 600;
+//     }
+// }

@@ -1,5 +1,4 @@
 import { createBrowserRouter, createRoutesFromElements, Route, Outlet, RouterProvider } from "react-router-dom";
-import "./App.css";
 import Navbar from "./components/organisms/Navbar/Navbar.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";

@@ -1,34 +1,20 @@
 import style from "./Home.module.scss";
+import img from "../assets/bigphoto.png";
 
 const Home = () => {
   return (
     <section className={style.home}>
-      <h1>Profesjonalne strony internetowe Grzegorz Gończowski</h1>
-      <br />
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quisquam iusto suscipit harum soluta sapiente quae recusandae impedit
-        optio temporibus minus numquam debitis eaque dolores hic, fuga voluptatem magni ipsa!
+      <header className={style.header}>
+        <h1 className={style.h1}>Profesjonalne strony internetowe Grzegorz Gończowski</h1>
+      </header>
+      <p className={style.p}>
+        Rozwiń swoją firmę w Internecie. Profesjonalne usługi zwiększające ilość klientów, które znajdziesz w jednym miejscu.
       </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quisquam iusto suscipit harum soluta sapiente quae recusandae impedit
-        optio temporibus minus numquam debitis eaque dolores hic, fuga voluptatem magni ipsa!
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quisquam iusto suscipit harum soluta sapiente quae recusandae impedit
-        optio temporibus minus numquam debitis eaque dolores hic, fuga voluptatem magni ipsa!
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quisquam iusto suscipit harum soluta sapiente quae recusandae impedit
-        optio temporibus minus numquam debitis eaque dolores hic, fuga voluptatem magni ipsa!
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quisquam iusto suscipit harum soluta sapiente quae recusandae impedit
-        optio temporibus minus numquam debitis eaque dolores hic, fuga voluptatem magni ipsa!
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quisquam iusto suscipit harum soluta sapiente quae recusandae impedit
-        optio temporibus minus numquam debitis eaque dolores hic, fuga voluptatem magni ipsa!
-      </p>
+      <img src={img} alt="" className={style.bigPhoto} />
+      <div className={style.buttonsContainer}>
+        <button className={style.specialButton}>Czytaj więcej</button>
+        <button className={style.button}>Kontakt</button>
+      </div>
     </section>
   );
 };
