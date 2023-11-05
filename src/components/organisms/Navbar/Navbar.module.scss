@@ -52,19 +52,21 @@
   }
 
   .list {
-    width: 40%;
-    margin-right: 45px;
+    width: 80%;
+    margin-right: 75px;
     justify-content: flex-end;
     .item {
-      font-size: v.$fs-d-small;
+      font-size: v.$fs-d-tiny;
+
       font-weight: 500;
+      margin-right: 40px;
     }
   }
 
   .header {
-    width: 60%;
+    width: 20%;
     // height: 50px;
-    margin-left: 45px;
+    margin-left: 75px;
     display: flex;
 
     .logo {

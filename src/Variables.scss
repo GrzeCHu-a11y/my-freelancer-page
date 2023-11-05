@@ -11,11 +11,31 @@ $fs-m-big: 27px;
 // 36, 54, 24, 20, 40
 
 $fs-d-tiny: 20px; 
-$fs-d-small: 24px; 
+$fs-d-small: 22px; 
 $fs-d-medium: 36px; 
 $fs-d-big: 40px; 
-$fs-d-very-big: 54px; 
+$fs-d-very-big: 48px; 
 
 $primary-color: white;
 $second-collor: #EF6268;
 $third-collor: #FAFAFC;
+
+// //Mobile
+// @media screen and (max-width: 500px) {
+//     $color: green; 
+
+//   }
+
+//   //desktop
+// @media (min-width: 500px) {
+//     $color: blue; 
+// }
+
+
+    $color: blue;  
+
+@media screen and (max-width: 500px) {
+    
+        $color: green; 
+    
+  }

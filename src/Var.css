@@ -1,0 +1,14 @@
+:root {
+    --color: green;
+    --fs-tiny: 15px; 
+    --fs-small: 17px; 
+    --fs-medium: 20px; 
+    --fs-big: 27px; 
+}
+
+/* des */
+@media (min-width: 500px) {
+    :root {
+        --color: blue;
+    }
+}

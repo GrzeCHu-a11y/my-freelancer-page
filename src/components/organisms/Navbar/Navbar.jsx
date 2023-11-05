@@ -36,6 +36,9 @@ const Navbar = () => {
             Usługi
           </NavLink>
           <NavLink className={style.item} to="/about" onClick={toogleNav}>
+            Informacje
+          </NavLink>
+          <NavLink className={style.item} to="/about" onClick={toogleNav}>
             Kontakt
           </NavLink>
         </ul>

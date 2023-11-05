@@ -18,8 +18,8 @@ html {
 /* desktop */
 @media (min-width: 500px) {
   section {
-    padding: 0px 45px;
-    margin-top: 50px;
+    padding: 0px 75px;
+    margin-top: 70px;
 
   }
 }

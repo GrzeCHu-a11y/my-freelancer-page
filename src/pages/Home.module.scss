@@ -1,6 +1,8 @@
 @use "/src/Variables.scss" as v;
+@import "/src/Var.css";
 .home {
     width: 100%;
+    // height: 10vh;
 }
 
 .header {
@@ -47,3 +49,71 @@
     border-radius: 10px;
     font-weight: 500;
 }
+
+//desktop
+@media (min-width: 500px) {
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        padding-top: 50px;
+
+        .textContainer {
+        width: 70%;
+          }
+      
+          .imgContainer {
+            width: 30%;
+            position: absolute;
+            right: 160px;
+          }
+    }
+
+    .header {
+        .h1 {
+            font-size: v.$fs-d-very-big;
+            font-weight: 550; 
+        }
+    }
+
+    .p {
+        padding-top: 10px;
+        font-size: v.$fs-d-small;
+        font-weight: 400;
+        width: 50%;
+        color: #2B2D42;
+    }
+
+    .bigPhoto {
+        width: 480px;
+        height: 420px;
+        margin: 0;
+    }
+
+    .buttonsContainer {
+       padding-top: 20px;
+    }
+
+    .specialButton {
+        font-size: 18px;
+        background-color: white;
+        padding: 10px;
+        border: 2px solid #EF6268;
+        border-radius: 10px;
+        font-weight: bolder;
+    }
+    
+    .button {
+        font-size: 18px;
+        background-color: v.$second-collor;
+        padding: 10px;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+}
+
+// h1 {
+//     color: var(--color);
+// }
