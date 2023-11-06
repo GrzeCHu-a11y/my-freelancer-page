@@ -2,18 +2,19 @@
 @import "/src/Var.css";
 .home {
     width: 100%;
-    // height: 10vh;
+    height: 80vh;
 }
 
 .header {
     .h1 {
-        font-size: v.$fs-m-big;
+        font-size: var(--fs-big);
+        font-weight: 550; 
     }
 }
 
 .p {
     margin-top: 15px;
-    font-size: v.$fs-m-small;
+    font-size: var(--fs-tiny);
     font-weight: 300;
     color: #2B2D42;
 }
@@ -32,7 +33,7 @@
 }
 
 .specialButton {
-    font-size: v.$fs-m-tiny;
+    font-size: var(--fs-tiny);
     background-color: white;
     padding: 5px;
     border: 2px solid #EF6268;
@@ -41,7 +42,7 @@
 }
 
 .button {
-    font-size: v.$fs-m-tiny;
+    font-size: var(--fs-tiny);
     background-color: v.$second-collor;
     padding: 10px;
     color: white;
@@ -50,7 +51,7 @@
     font-weight: 500;
 }
 
-//desktop
+//lapt
 @media (min-width: 500px) {
 
     .wrapper {
@@ -71,14 +72,14 @@
 
     .header {
         .h1 {
-            font-size: v.$fs-d-very-big;
+            font-size: var(--fs-very-big);
             font-weight: 550; 
         }
     }
 
     .p {
         padding-top: 10px;
-        font-size: v.$fs-d-small;
+        font-size: var(--fs-small);
         font-weight: 400;
         width: 50%;
         color: #2B2D42;
@@ -112,8 +113,38 @@
         border-radius: 10px;
         font-weight: 600;
     }
+
+        /* des */
+@media (min-width: 1700px) {
+
+    .wrapper {
+        padding-top: 100px;
+
+        .imgContainer {
+                right: 50px;
+        }
+    }
+
+    .p {
+        padding-top: 20px;
+    }
+
+    .buttonsContainer {
+        padding-top: 30px;
+    }
+
+    .bigPhoto {
+        width: 520px;
+        height: 480px;
+        margin: 0;
+    }
+
+    .specialButton, .button {
+        font-size: var(--fs-small);
+        
+    }
+
 }
 
-// h1 {
-//     color: var(--color);
-// }
+}
+

@@ -1,5 +1,6 @@
 import style from "./Home.module.scss";
 import img from "../assets/bigphoto.png";
+import Cards from "../components/organisms/Cards/Cards";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
           <button className={style.specialButton}>czytaj więcej</button>
         </div>
       </section>
+      <Cards />
     </div>
   );
 };
